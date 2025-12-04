@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBridge - Healthcare Accessibility Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0d9488; /* Teal 600 */
+            --secondary-color: #f0fdfa; /* Teal 50 */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #0f766e;
+            border-color: #0f766e;
+        }
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #ffffff 0%, #ccfbf1 100%);
+        }
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .footer {
+            background-color: #111827;
+            color: #9ca3af;
+            padding: 60px 0 30px 0;
+        }
+        .footer h5, .footer h6 {
+            color: #fff;
+        }
+        .footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-heart-pulse-fill me-2"></i> MediBridge
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn btn-primary rounded-pill px-4">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-light text-primary border border-primary mb-3 rounded-pill px-3 py-2">Healthcare Accessibility</span>
+                    <h1 class="display-4 fw-bold mb-4 text-dark">Making Healthcare <br> <span style="color: var(--primary-color);">Clear for Everyone</span></h1>
+                    <p class="lead text-secondary mb-5">
+                        A multimodal platform designed to help patients better understand medical information, consent forms, and instructions through text translation, simplified language, and voice readouts.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#features" class="btn btn-primary btn-lg rounded-pill px-5 shadow">Explore Solutions</a>
+                        <a href="#" class="btn btn-outline-dark btn-lg rounded-pill px-5">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="bg-light p-4 rounded-4">
+                        <div class="ratio ratio-4x3 rounded-3 overflow-hidden bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-file-medical text-secondary opacity-50" style="font-size: 5rem;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="fw-bold mb-4">Bridging the Communication Gap</h2>
+                    <p class="text-muted mb-4">
+                        We are a one-stop solution that ensures clear communication in healthcare, especially for those facing language or literacy barriers.
+                    </p>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-1">Language Barriers</h5>
+                                <p class="text-muted small mb-0">Translating consent forms instantly into local languages.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-1">Complex Jargon</h5>
+                                <p class="text-muted small mb-0">Simplifying medical terms into plain, easy-to-read language.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-1">Low Literacy</h5>
+                                <p class="text-muted small mb-0">Voice readouts for patients who cannot read comfortably.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container py-5">
+            <div class="text-center mb-5 max-w-2xl mx-auto">
+                <h2 class="fw-bold mb-3">How It Directly Solves the Problem</h2>
+                <p class="text-muted">Comprehensive tools designed for clarity and understanding.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card p-4">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-translate"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Translation & Summarisation</h5>
+                            <p class="card-text text-muted small mt-3">
+                                Translate medical documents (like consent forms) into local languages in real-time, making healthcare more accessible to non-native speakers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card p-4">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-magic"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Text Simplification</h5>
+                            <p class="card-text text-muted small mt-3">
+                                We use AI-powered text simplification to convert complex medical jargon into easy-to-understand, short sentences with plain language.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card p-4">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-mic-fill"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Voice Integration</h5>
+                            <p class="card-text text-muted small mt-3">
+                                For patients who can’t read or have low literacy, the platform reads out the translated and simplified text.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card p-4">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-clipboard-check-fill"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Real-Time Consent</h5>
+                            <p class="card-text text-muted small mt-3">
+                                An optional quiz or interactive check ensures that patients truly understand the consent form allowing verification before proceeding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 text-white text-center" style="background-color: var(--primary-color);">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-3">Empowering Patients Today</h2>
+            <p class="lead mb-4 opacity-90">Join us in making healthcare information accessible to everyone, everywhere.</p>
+            <button class="btn btn-light text-primary btn-lg rounded-pill px-5 fw-bold shadow">Contact Sales</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3 d-flex align-items-center"><i class="bi bi-heart-pulse-fill me-2"></i> MediBridge</h5>
+                    <p class="small text-muted">
+                        A multimodal platform designed to help patients better understand medical information, consent forms, and instructions.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-3">Platform</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Translation</a></li>
+                        <li class="mb-2"><a href="#">Simplification</a></li>
+                        <li class="mb-2"><a href="#">Voice Reader</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Careers</a></li>
+                        <li class="mb-2"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Stay Updated</h6>
+                    <p class="small text-muted">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control bg-dark border-secondary text-light" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2024 MediBridge. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
