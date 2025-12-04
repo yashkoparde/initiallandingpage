@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4f4fc;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #6b3ce9;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 40px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ---- Reveal Animation ---- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
